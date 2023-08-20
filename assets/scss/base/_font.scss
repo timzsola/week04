@@ -1,0 +1,55 @@
+// Noto Sans TC + Roboto
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap');
+
+// english
+.title-en{
+    font-family: 'Roboto';
+}
+
+// chinese
+.title-big{
+    font-size: 64px;
+    font-weight: 700;
+}
+.title-middle{
+    font-size: 48px;
+    font-weight: 700;
+}
+.title-small{
+    font-size: 36px;
+}
+.title-24{
+    font-size: 24px;
+}
+.title-20{
+    font-size: 20px;
+}
+.text-18{
+    font-size: 18px;
+}
+.link-middle{
+    font-size: 20px;
+    font-weight: 700;
+}
+.link-small{
+    font-size: 14px;
+}
+
+// 版型配件
+.page-title{
+    border-left: 10px solid $primary_color;
+    padding-left: 16px;
+}
+
+// Phone
+@media (max-width: 375px){
+    .title-md-24{
+        font-size: 24px;
+    }
+    .title-md-20{
+        font-size: 20px;
+    }
+    .title-md-16{
+        font-size: 16px;
+    }
+}

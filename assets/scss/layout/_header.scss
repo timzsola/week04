@@ -1,0 +1,43 @@
+.logo{
+  img{
+    width: 80px;
+  }
+  @include pad{
+    margin-left: 15px;
+    margin-bottom: 16px;
+  }
+}
+
+.navbar{
+  @include pad{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
+  }
+}
+.nav-links{
+  @include pad {
+    flex-wrap: wrap;
+  }
+}
+.nav-item{
+  a{
+    display: block;
+    padding: 25px 32px;
+    &:hover{
+      background: $primary_dark;
+    }
+  }
+  @include pad{
+    width: 50%;
+    font-size: 16px;
+    outline: solid 1px #fff;
+    text-align: center;
+    a{
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}

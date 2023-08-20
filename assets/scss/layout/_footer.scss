@@ -1,0 +1,105 @@
+.footer-top{
+  border-bottom: 1px solid $link_text;
+  @include pad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}
+.footer-navbar{
+  @include pad{
+    margin-bottom: 0;
+  }
+}
+.nav-links{
+  @include pad{
+    width: 100%;
+  }
+}
+.link-item{
+  margin-right: 48px;
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover{
+    opacity: 0.8;
+  }
+  @include pad{
+    display: none;
+  }
+}
+
+.social{
+  li{
+    margin-right: 32px;
+    &:hover{
+      opacity: 0.8;
+    }
+    @include pad{
+      margin-right: 16px;
+    }
+    @include mobile{
+      margin-right: 8px;
+    }
+  }
+  li:last-child{
+    margin-right: 0;
+  }
+  img{
+    width: 48px;
+    @include pad{
+      width: 40px;
+    }
+    @include mobile{
+      width: 32px;
+    }
+  }
+} 
+.contact{
+  a:hover{
+    opacity: 0.8;
+  }
+  span{
+    color: $link_text;
+    margin-right: 20px;
+  }
+  @include pad{
+    order: -1;
+    p{
+      font-size: 16px;
+    }
+    span{
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+}
+.copyright{
+  color: $link_text;
+  @include pad{
+    margin-bottom: 8px;
+  }
+}
+.policy{
+  gap: 48px;
+  a:hover{
+    opacity: 0.8;
+  }
+  @include pad{
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.footer-bottom{
+  @include pad{
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+}
+.bg-primary.pt-48{
+  @include pad{
+    padding-top: 24px;
+  }
+}

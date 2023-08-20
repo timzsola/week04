@@ -1,0 +1,55 @@
+.card-content{
+    border: 2px solid #dedede;
+    @media (max-width:375px){
+        width: 100%;
+    }
+}
+#storeSelect{
+    width: 74%;
+    padding: 6px 0 6px 12px;
+    color: #495057;
+}
+.store-card{
+    @media (max-width: 768px){
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    @media (max-width: 375px){
+        flex-direction: column;
+    }
+}
+.store-name{
+    padding: 8px 24px;
+    border-bottom: 2px solid #dedede;
+}
+.store-content{
+    padding: 16px 24px;
+    a{
+        color: #000;
+    }
+}
+.card-img{
+    background: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    background-size: auto;
+    @media (max-width:768px){
+        width: 48%;
+        img{
+            display: none;
+        }
+    }
+    @media (max-width:375px){
+        width: 100%;
+        img{
+            display: flex;
+        }
+    }
+}
+.store-map{
+    @media (max-width:768px){
+        height: 414px;
+    }
+}

@@ -1,0 +1,51 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+img{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+	color: $link_text;
+}
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height: 1.5;
+}
+
+// 基本版型
+.container{
+	margin: 0 auto;
+	max-width: 1320px;
+	padding: 0 12px;
+	// 平板模式
+	@media (max-width: 768px){
+		max-width: 720px;
+	}
+	// 手機模式
+	@media (max-width:375px){
+		max-width: 372px;
+	}
+}
+.bg-primary{
+	background: $primary_color;
+}
+
+// layout-tools
+.d-flex{
+	display: flex;
+}
+.jc-sb{
+	justify-content: space-between;
+}
+.ai-c{
+	align-items: center;
+}
+.f-dir{
+	flex-direction: column;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
